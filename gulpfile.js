@@ -1,0 +1,1 @@
+var minify=require("node-minify-all/minify-all-api"),opts={rootpath:__dirname,mode:"all",backups:!1};console.log(opts);minify.process(opts);

@@ -1,0 +1,44 @@
+/* footer*/
+
+footer {
+  margin: 50px 0 0 0;
+  background: #222;
+  box-shadow: 9px 6px 16px #c0c0c0;
+  p {
+    color: #a3a3a3;
+    font-weight: 300;
+    font-size: 11px;
+    padding: 10px;
+  }
+}
+
+.footer {
+  hr {
+    border-color: #fff;
+    margin: 0;
+    width: 46%;
+    margin: 0px 0px 15px 0px;
+    background: #fff;
+    border-width: 0.03em;
+  }
+  h2 {
+    margin: 25px 0px 9px 0px;
+    color: #eee;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  footer {
+    margin: 0 26px 0 72px;
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  footer {
+    margin: unset;
+    padding: 36px;
+    width: unset;
+  }
+}

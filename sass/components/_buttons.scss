@@ -1,0 +1,29 @@
+.btn {
+  margin: 28px 27px 0 0;
+  border: 0px;
+  padding: 15px;
+  background: #ffa708;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 2px;
+  cursor: pointer;
+  display: block;
+  &:hover {
+    background: #9c9c9c;
+  }
+  .btn-lg {
+    padding: 20px 50px 20px 50px;
+  }
+  .btn-sm {
+    padding: 10px 15px 10px 15px;
+  }
+  .btn-default {
+    background: #ffa708;
+  }
+  .btn-success {
+    background: #00b005;
+  }
+  .btn-danger {
+    background: #ff0808;
+  }
+}

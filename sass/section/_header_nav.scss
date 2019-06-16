@@ -1,0 +1,52 @@
+/* Navigation in header */
+
+nav {
+  a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #999;
+    font-weight: 300;
+    white-space: nowrap;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+  ul li {
+    padding: 11px;
+    list-style: none;
+    display: inline-block;
+    border-bottom: 2px solid #ffa708;
+    position: relative;
+    background: #fff;
+    margin: 0px 3px;
+    i {
+      font-size: 18px;
+      margin: 10px;
+      color: #999;
+    }
+    &:hover, ul li:hover {
+      background-color: #ffa708;
+      color: #fff;
+    }
+    &:hover {
+      i, a {
+        background-color: #ffa708;
+        color: #fff;
+      }
+    }
+    ul {
+      li {
+        display: block;
+      }
+      display: none;
+    }
+    &:hover ul {
+      display: block;
+      position: absolute;
+      z-index: 9999;
+      padding: 13px 0;
+      text-align: left;
+      left: 0;
+      min-width: 100px;
+    }
+  }
+}

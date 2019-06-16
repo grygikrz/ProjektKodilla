@@ -1,0 +1,39 @@
+/* Header */
+
+header {
+  float: right;
+  position: fixed;
+  right: 179px;
+  margin: 0 0px 0px 80px;
+  h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-weight: 200;
+    text-align: left;
+    border: 1px #FFF solid;
+    display: inline-block;
+    font-size: 26px;
+    padding: 20px;
+    margin: 10px 20px;
+  }
+  a {
+    color: white;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  header {
+    width: 85%;
+    position: unset;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  header {
+    float: unset;
+    position: unset;
+    right: unset;
+    margin: 0;
+    width: unset;
+  }
+}

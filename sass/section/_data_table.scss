@@ -1,0 +1,30 @@
+.scroll-wrapper {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  table {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+table tr {
+  padding: 15px;
+  border-bottom: 1px solid #e3e3e3;
+  &:hover {
+    background: #ffa708;
+    color: #fff;
+    a, p {
+      background: #ffa708;
+      color: #fff;
+    }
+  }
+  td {
+    padding: 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    i {
+      color: #fff;
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.you, .other {
+  background: #ffa708 !important;
+  width: 39% !important;
+  height: unset !important;
+  float: left;
+  margin: 0px !important;
+  clear: both;
+  color: #fff;
+  border-radius: 26px !important;
+}
+
+.you:after {
+  content: '';
+  position: relative;
+  left: -16%;
+  bottom: -78px;
+  width: 0;
+  height: 0;
+  border: 32px solid transparent;
+  border-top-color: #ffa708;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -10px;
+  margin-bottom: -20px;
+}
+
+.other {
+  &:after {
+    content: '';
+    position: relative;
+    left: -16%;
+    bottom: -78px;
+    width: 0;
+    height: 0;
+    border: 32px solid transparent;
+    border-top-color: #ffa708;
+    border-bottom: 0;
+    border-left: 0;
+    margin-left: -10px;
+    margin-bottom: -20px;
+    border-top-color: #5b5b5b;
+  }
+  background: #5b5b5b !important;
+  float: right;
+}
+
+.statuson {
+  background: green;
+  width: 11px;
+  height: 11px;
+  border-radius: 80px;
+  display: block;
+  padding: 8px;
+  margin: 35px 0 0 0;
+}

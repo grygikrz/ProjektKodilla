@@ -2,16 +2,15 @@
 <html lang="en" dir="ltr">
 	<head>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="style.css" type="text/css">
+		<link rel="stylesheet" href="css/style.css" type="text/css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-		<title>Sweets</title>
+		<title>Admin - Dashboard</title>
 	</head>
-	<body>
+	<body class="admin dashboard">
 		<div class="container">
-			<section class="admin main">
 				<div class="row">
-					<div class="col-2">
+					<div class="col-sm-1 col-md-2 col-lg-2 col-xl-2">
 						<div class="sidebar">
 							<div class="logo">
 							<h1>
@@ -24,22 +23,22 @@
 								<span></span>
 							</div>
 							<ul>
-								<li><a href="#"><i class="fa fa-home"></i> General</a></li>
+								<li class="active"><a href="index.html"><i class="fa fa-home"></i> General</a></li>
 								<li><a href="#"><i class="fa fa-search-location"></i> Details</a></li>
 								<li><a href="#"><i class="fa fa-link"></i> Links</a></li>
-								<li class="active"><a href="#"><i class="fa fa-pager"></i> Banners</a></li>
+								<li><a href="banners.html"><i class="fa fa-pager"></i> Banners</a></li>
 								<li><a href="#"><i class="fa fa-calendar-alt"></i> Personal Data</a></li>
 								<li><a href="#"><i class="fa fa-money-check-alt"></i> Payout</a></li>
 								<li><a href="#"><i class="fa fa-undo"></i> Postback</a></li>
 							</ul>
 							<div class="mprofile">
 								<h4>Your Manager:</h4><br>
-								<img src="17.jpg" /><span></span><br>
+								<a href="#chat"><img src="images/17.jpg" /><span></span></a><br>
 								<p>Bill K.</p>
 							</div>
 						</div>
 					</div>
-					<div class="col-10">
+					<div class="col-sm-10 col-md-10 col-lg-10 col-xl-10">
 						<header>
 								<nav>
 									<ul>
@@ -47,7 +46,7 @@
 											<a href="#"><i class="fa fa-wallet"></i>$1,500.00</a>
 										</li>
 										<li>
-											<a href="#"><i class="fa fa-bell"></i><span></span></a>
+											<a href="#"><i class="fa fa-bell"><span></span></i></a>
 										</li>
 										<li>
 											<a href="#profile"><i class="fa fa-user-circle"></i>Sylwester Stalone</a>
@@ -59,7 +58,7 @@
 								</nav>
 						</header>
 						<a href="##" class="lightbox" id="profile">
-							<div class="profile">
+							<div class="modal profile">
 								<div class="info">
 									<h4>YOUR PROFILE:</h4>
 									<i class="fa fa-user-circle"></i>
@@ -67,50 +66,104 @@
 									<span class="statuson"><p>Online</p></span>
 									<div class="data">
 										<h4>User Info:</h4>
-										<button class="cbutton">Exit</button>
+										<button class="btn btn-default">Exit</button>
+									</div>
+								</div>
+							</div>
+						</a>
+						<a href="##" class="lightbox" id="chat">
+							<div class="modal chat">
+								<div class="info">
+									<h4>ONLINE CHAT WITH YOUR MANAGER:</h4>
+									<img src="images/17.jpg" /><span></span>
+									<p>Bill K.</p>
+									<span class="statuson"><p>Online</p></span>
+									<div class="data">
+										<h4>Conversation:</h4>
+										<div class="you">Hello. How are you doing?</div>
+										<div class="other">I'm fine thanks</div>
+										<div class="you">I have a question...</div>
+										<button class="btn btn-default">Exit</button>
 									</div>
 								</div>
 							</div>
 						</a>
 						<div class="content">
-								<div class="content-header">BANNERS</div>
+								<div class="content-header"><h3>General Statistic</h3></div>
 								<div class="content-body">
-									<button class="cbutton">+ add new</button>
-									<table>
-										<tbody>
-											<tr>
-												<th></th><th></th><th></th><th></th>
-											</tr>
-											<tr>
-												<td><p>Banner 1</p></td><td><a href="#">https://www.test.com/image.png</a></td><td><a href="#"><i class="fa fa-link"></i></a></td><td><a href="#"><i class="fas fa-trash"></i></a></td>
-											</tr>
-											<tr>
-												<td><p>Banner 2</p></td><td><a href="#">https://www.test.com/image.png</a></td><td><a href="#"><i class="fa fa-link"></i></a></td><td><a href="#"><i class="fas fa-trash"></i></a></td>
-											</tr>
-											<tr>
-												<td><p>Banner 3</p></td><td><a href="#">https://www.test.com/image.png</a></td><td><a href="#"><i class="fa fa-link"></i></a></td><td><a href="#"><i class="fas fa-trash"></i></i></a></td>
-											</tr>
-											<tr>
-												<td><p>Banner 4</p></td><td><a href="#">https://www.test.com/image.png</a></td><td><a href="#"><i class="fa fa-link"></i></a></td><td><a href="#"><i class="fas fa-trash"></i></a></td>
-											</tr>
-											<tr>
-												<td><p>Banner 5</p></td><td><a href="#">https://www.test.com/image.png</a></td><td><a href="#"><i class="fa fa-link"></i></a></td><td><a href="#"><i class="fas fa-trash"></i></a></td>
-											</tr>
-									</tbody>
-								</table>
-								<button class="cbutton">+ add new</button>
+									<div class="date">
+									<div class="div-table">
+									 <div class="div-table-row">
+											<div class="div-table-col border">16.05.2019</div>
+											<div class="div-table-col border">16.05.2019<i class="far fa-calendar-alt"></i></div>
+											<div class="div-table-col"><i class="fas fa-undo"></i></div>
+									 </div>
+									 </div>
+								 </div>
+								 <hr>
+									<div class="statistics">
+										<div class="div-table">
+										 <div class="div-table-row">
+												<div class="div-table-col">Visit Singups</div>
+												<div class="div-table-col">234</i></div>
+												<div class="div-table-col"></div>
+												<div class="div-table-col">Net Deposit</div>
+												<div class="div-table-col">534</i></div>
+										 </div>
+										 <div class="div-table-row">
+												<div class="div-table-col">FTD</div>
+												<div class="div-table-col">654</i></div>
+												<div class="div-table-col"></div>
+												<div class="div-table-col">Turn over</div>
+												<div class="div-table-col">734</i></div>
+										 </div>
+										 </div>
+								<h3>Earnings Chart</h3>
+								<canvas id="myChart"></canvas>
+								</div>
 							</div>
+						</div>
+						<div class="content">
+							<div class="content-header"><h3>Links</h3></div>
+							<div class="content-body">
+								<button class="btn btn-default"  id="cbutton">+ add new</button>
+								<div class="scroll-wrapper">
+								<table>
+									<tbody>
+										<tr>
+											<th></th><th></th><th></th><th></th>
+										</tr>
+										<tr>
+											<td><p>Link 1</p></td><td><a href="#">https://www.test.com/image.png</a></td><td><a href="#"><i class="fa fa-link"></i></a></td><td><a href="#"><i class="fas fa-trash"></i></a></td>
+										</tr>
+										<tr>
+											<td><p>Link 2</p></td><td><a href="#">https://www.test.com/image.png</a></td><td><a href="#"><i class="fa fa-link"></i></a></td><td><a href="#"><i class="fas fa-trash"></i></a></td>
+										</tr>
+										<tr>
+											<td><p>Link 3</p></td><td><a href="#">https://www.test.com/image.png</a></td><td><a href="#"><i class="fa fa-link"></i></a></td><td><a href="#"><i class="fas fa-trash"></i></i></a></td>
+										</tr>
+										<tr>
+											<td><p>Link 4</p></td><td><a href="#">https://www.test.com/image.png</a></td><td><a href="#"><i class="fa fa-link"></i></a></td><td><a href="#"><i class="fas fa-trash"></i></a></td>
+										</tr>
+										<tr>
+											<td><p>Link 5</p></td><td><a href="#">https://www.test.com/image.png</a></td><td><a href="#"><i class="fa fa-link"></i></a></td><td><a href="#"><i class="fas fa-trash"></i></a></td>
+										</tr>
+								</tbody>
+							</table>
+							</div>
+							<button class="btn btn-default" id="cbutton">+ add new</button>
+						</div>
 								<div class="content-footer"></div>
 						</div>
 						<footer>
 							<div class="row">
-								<div class="col-3 footer">
+								<div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 footer">
 								</div>
-								<div class="col-3 footer">
+								<div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 footer">
 								</div>
-								<div class="col-3 footer">
+								<div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 footer">
 								</div>
-								<div class="col-3 footer">
+								<div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 footer">
 									<h2>Contact</h2>
 									<hr>
 									<p>Cotton candy macaroon sesame snaps gingerbread cake pastry candy canes.</p>
@@ -119,8 +172,8 @@
 						</footer>
 					</div>
 				</div>
-			</section>
 		</div>
-<script src="script.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+		<script src="js/script.js"></script>
 	</body>
 </html>

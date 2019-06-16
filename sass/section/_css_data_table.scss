@@ -1,0 +1,22 @@
+/* Table css version */
+
+.div-table {
+  display: table;
+  width: auto;
+  border-spacing: 5px;
+}
+
+.div-table-row {
+  display: table-row;
+  width: auto;
+  clear: both;
+}
+
+.div-table-col {
+  float: left;
+  display: table-column;
+  width: 200px;
+  &.border {
+    border: 1px solid #cfcfcf;
+  }
+}
