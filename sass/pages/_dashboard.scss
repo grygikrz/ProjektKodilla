@@ -9,7 +9,7 @@ i {
   &.fas.fa-undo {
     color: #ffffff;
     border-radius: 5px;
-    background-color: #ffa708;
+    background-color: $main-color;
     padding: 13px;
     margin: 0;
     position: relative;
@@ -22,7 +22,7 @@ i {
   &.fa.fa-bell span {
     width: 12px;
     height: 12px;
-    background: #ffa708;
+    background: $main-color;
     position: absolute;
     border-radius: 80px;
     left: 29px;
